@@ -1,0 +1,49 @@
+.calender_section {
+    .calender_container {
+        padding: 1em 0;
+        // border: 1px solid black;
+        @include flex(center, center);
+    }
+
+    .add_appointment {
+        // border: 1px solid black;
+        @include flex(center, center);
+        flex-direction: column;
+        margin: 2em 0;
+        width: 100%;
+
+        .appointment_list {
+            margin-bottom: 2em;
+
+            h1 {
+                text-transform: capitalize;
+            }
+        }
+
+        .btn_icon {
+            color: #fff;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-right: 6px;
+        }
+
+        button {
+            @include flex(space-between, center);
+            border: none;
+            outline: none;
+            background-color: rgb(16, 192, 16);
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 1.2em;
+            margin-top: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 4px;
+
+            &:active {
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                outline: 2px solid rgb(16, 192, 16);
+            }
+        }
+    }
+}

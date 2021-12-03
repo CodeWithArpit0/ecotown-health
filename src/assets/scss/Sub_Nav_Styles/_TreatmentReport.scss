@@ -1,0 +1,89 @@
+.treatment_section {
+    height: 80vh;
+    @include flex(center, center);
+
+    .treatment_history {
+        width: 90%;
+        min-height: 15em;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+        @include flex(space-around, stretch);
+        flex-direction: column;
+        padding: 1em 2em;
+
+        .treatment_heading {
+            h1 {
+                color: var(--secondry-color);
+                border-bottom: 2px solid var(--primary-color);
+                padding-right: 1em;
+                font-size: 1.8rem;            }
+        }
+
+        .date_filter {
+            margin: 1.5em 0;
+
+            form>.filter_box {
+                width: 32em;
+                padding: 1em 0;
+                box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+                @include flex(space-around, center);
+                border-radius: 4px;
+
+                .filter_fields {
+                    @include flex(space-between, center);
+
+                    h5 {
+                        margin: 0 10px;
+                        color: rgb(173, 173, 173);
+                    }
+
+                    .filter_field {
+                        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                        border-radius: 4px;
+                        padding: 6px 1em;
+                    }
+                }
+
+                .treatment_date_submit_btn {
+                    padding: 6px 1.5em;
+                    font-weight: bold;
+                    border-radius: 4px;
+                    background-color: var(--primary-color);
+                    color: #fff;
+                    border: 1px solid transparent;
+                    transition: all 0.2s ease-in-out;
+
+                    &:hover {
+                        color: var(--primary-color);
+                        background-color: #fff;
+                        border: 1px solid var(--primary-color);
+                    }
+                }
+            }
+        }
+
+        .appointment_table {
+
+            table {
+                td {
+                    .details_btn {
+                        padding: 4px 1.5em;
+                        color: #ffff;
+                        background-color: var(--primary-color);
+                        border-radius: 4px;
+                        font-weight: bold;
+                        border: 1px solid transparent;
+                        transition: all 0.2s ease-in-out;
+
+                        &:hover {
+                            color: var(--primary-color);
+                            background-color: #fff;
+                            border: 1px solid var(--primary-color);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

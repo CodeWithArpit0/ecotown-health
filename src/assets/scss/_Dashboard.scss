@@ -1,0 +1,9 @@
+@import "./Header";
+@import "./DashboardCalender";
+@import "./Campaigns";
+
+.home_section{
+    width: 100%;
+    @include flex(space-around, unset);
+    flex-direction: column;
+}

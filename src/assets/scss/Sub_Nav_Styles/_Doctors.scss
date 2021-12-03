@@ -1,0 +1,242 @@
+.doctors_section {
+    min-height: 80vh;
+    @include flex(center, center);
+
+    .doctor_model {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include flex(center, center);
+        background-color: rgba(0,0,0,0.20);
+        display: none;
+        animation: growDown .5s ease-in-out;
+        transform-origin: top center;
+
+
+        .add_doctor_container {
+            width: 60%;
+            height: 70%;
+            padding: 1.5em 1em;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+
+            .form_header {
+                @include flex(space-between, center);
+                padding: 0 3em;
+
+                h1 {
+                    color: var(--primary-color);
+                }
+
+                button {
+                    @include flex(center, center);
+                    background: transparent;
+                    transition: all 0.2s ease-in-out;
+                    color: var(--secondry-color);
+                    cursor: pointer;
+
+                    &:hover {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+
+            .form_container {
+                height: 100%;
+                padding: 0 1em;
+                @include flex(stretch, center);
+
+                form {
+                    @include flex(center, center);
+                    flex-direction: column;
+                    width: 100%;
+
+                    .row{
+                        width: 100%;
+                        @include flex(space-between, center);
+                        margin: 1em 0;
+                        padding: 0 2em;
+                        input{
+                            border: 2px solid var(--primary-color);
+                            border-radius: 4px;
+                            padding: 4px 0;
+                            padding-left: 1em;
+                            width: 18em;
+                            font-weight: bold;
+                            color: var(--secondry-color);
+
+                            &::placeholder{
+                                color: var(--primary-color);
+                            }
+
+                            &::active{
+                                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+                            }
+                        }
+
+                        button{
+                            padding: 6px 2em;
+                            font-size: .9em;
+                            color: #fff;
+                            background-color: var(--primary-color);
+                            border-radius: 2px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .last_row{
+                        justify-content: flex-end;
+
+                        label{
+                            margin-right: 2em;
+                            padding: 6px 2em;
+                            color: #fff;
+                            background-color: var(--primary-color);
+                            border-radius: 2px;
+                            font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .doctors_list_container {
+        min-width: 90%;
+        border-radius: 20px;
+        background-color: #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 1em 2em;
+
+        .section_header {
+            @include flex(space-between, center);
+            width: 100%;
+            margin: 1em 0 1.5em;
+            h1 {
+                color: var(--secondry-color);
+                border-bottom: 2px solid var(--primary-color);
+                padding-right: 1em;
+                font-size: 1.8rem;
+            }
+            .add_doctor_btn {
+                padding: 7px 1.5em;
+                border-radius: 4px;
+                color: #fff;
+                background-color: var(--primary-color);
+                font-weight: bold;
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                cursor: pointer;
+                border: 2px solid transparent;
+                transition: all 0.2s ease-in-out;
+
+                &:hover {
+                    border-color: var(--primary-color);
+                    background-color: #fff;
+                    color: var(--primary-color);
+                }
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+
+        }
+
+        .doctors_list {
+            width: 100%;
+
+            table {
+
+                .table_header {
+                    background-color: var(--primary-color);
+                    color: #fff;
+                }
+
+                .doctor_options_cell {
+
+                    .doctor_options {
+                        @include flex(center, center);
+                        flex-direction: column;
+
+                        .btn_row {
+                            margin: 1px 0;
+                            width: 100%;
+                            @include flex(space-between, center);
+                        }
+
+                        button {
+                            margin: 0 2px;
+                            background-color: var(--primary-color);
+                            padding: 1px 1em;
+                            transition: all 0.2s ease-in-out;
+                            border-radius: 3px;
+                            color: #fff;
+                            border: 1px solid transparent;
+
+                            &:hover {
+                                border-color: var(--primary-color);
+                                background-color: #fff;
+                                color: var(--primary-color);
+                            }
+                        }
+                    }
+
+                    .doctor_menu_btn {
+                        color: #fff;
+                        border-radius: 2px;
+                        border: 1px solid transparent;
+                        transition: all 0.2s ease-in-out;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+                        &:hover {
+                            border-color: var(--primary-color);
+                            background-color: #fff;
+                            color: var(--primary-color);
+                        }
+
+
+
+                    }
+
+                    #doctor_options {
+                        position: absolute;
+                        padding: 6px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+                        background-color: #fff;
+                        text-align: start;
+
+
+                        li {
+                            margin: 2px 0;
+
+                            border-radius: 4px;
+                            padding: 2px 8px;
+                            color: grey;
+                            font-size: .8rem;
+                            cursor: pointer;
+
+                            &:hover {
+                                background-color: rgba(16, 192, 16, 0.301);
+                            }
+                        }
+                    }
+
+                    .hide {
+                        display: none;
+                    }
+
+                    .show {
+                        display: block;
+                    }
+                }
+
+
+            }
+        }
+
+    }
+}

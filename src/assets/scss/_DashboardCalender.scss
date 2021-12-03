@@ -1,0 +1,53 @@
+.calender_revenu_section {
+    @include flex(center, center);
+    margin: 2em 0;
+
+    .main_container {
+        width: 95%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #fff;
+        @include flex(space-around, stretch);
+        padding: 1em 2em;
+
+        .calender,
+        .revenue_container {
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        }
+
+        .revenue_container {
+            width: 20em;
+            border-radius: 8px;
+            @include flex(unset, center);
+            flex-direction: column;
+            padding: 1em;
+
+            div{
+                width: 100%;
+                
+            }
+            .date {
+                border-bottom: 1px solid grey;
+                text-align: center;
+                padding: 1em;
+            }
+            
+            .revenue {
+                height: 100%;
+                padding: 0 1em;
+
+                div{
+                    margin: 1em 0;
+                    padding: 1em 0;
+                border-bottom: 1px solid grey;
+                     
+                }
+
+                .income {}
+
+                .expense {}
+                .appointment {}
+            }
+        }
+    }
+}

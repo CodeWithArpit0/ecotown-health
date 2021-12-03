@@ -1,0 +1,80 @@
+@import "./mixins";
+@import "./Variables";
+@import "./Navbar";
+@import "./Dashboard";
+@import "./Campaign";
+@import "./Calender";
+@import "./Sub_Nav_Styles/SubNavStyles";
+@import "./Footer";
+
+@font-face {
+  font-family: Nunito;
+  src: url("../fonts/Nunito/Nunito-Regular.ttf");
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+* {
+  font-family: Nunito;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  outline: none;
+  border: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 6px;
+  // box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  overflow: hidden;
+
+  td,
+  tr {
+    padding: 10px 0;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  th {
+    padding: 10px .5em;
+  }
+}
+.table_header {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+::selection {
+  color: var(--primary-color);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(11, 139, 11);
+}

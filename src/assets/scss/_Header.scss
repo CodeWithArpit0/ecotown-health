@@ -1,0 +1,91 @@
+.header {
+    width: 100%;
+    min-height: 100vh;
+    @include flex(space-around, center);
+    flex-direction: column;
+    color: var(--secondry-color);
+
+    section {
+        width: 95%;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: #fff;
+    }
+
+    .user_panel {
+        min-height: 15em;
+        padding: 10px 20px;
+        flex-direction: column;
+        @include flex(space-around, center);
+        margin: 2em 0;
+        .cards_container {
+            width: 100%;
+            @include flex(center, center);
+            flex-direction: column;
+
+            .card_group {
+                width: 100%;
+                @include flex(space-between, center);
+                margin: 10px 0;
+            }
+
+            .card_link {
+                color: var(--secondry-color);
+                text-decoration: none;
+            }
+
+            .card {
+                @include flex(space-around, center);
+                width: 15em;
+                padding: 10px;
+                border-radius: 8px;
+                box-shadow: rgba(0, 0, 0, 0.22) 0px 1px 4px;
+                transition: all 0.1s ease-in-out;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+                }
+
+                .card_icon {
+                    padding: 16px 10px;
+                    @include flex(space-around, center);
+                    color: #fff;
+                    font-size: 3rem;
+                    border-radius: 20%/80%;
+                }
+
+                .card1 {
+                    background-color: rgb(51, 122, 255);
+                }
+
+                .card2 {
+                    background-color: rgb(66, 255, 66);
+                }
+
+                .card3 {
+                    background-color: rgb(255, 157, 66);
+                }
+
+                .card4 {
+                    background-color: rgb(255, 66, 98);
+                }
+
+                .card_options {
+                    margin: 8px;
+
+                    h4 {
+                        text-transform: capitalize;
+                    }
+
+                    p {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .chart_section>.chart{
+        padding: 1em 2em;
+    }
+}

@@ -1,0 +1,8 @@
+
+.footer_section{
+    padding: 10px 0;
+    @include flex(center, center);
+    background-color: var(--primary-color);
+    font-weight: bold;
+    color: #fff;
+}
