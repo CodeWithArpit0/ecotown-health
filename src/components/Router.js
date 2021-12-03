@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./Dashboard/Dashboard";
+import Dashboard from "./Dashboard/Dashboard";
 import Campaign from "./Campaign/Campaign";
 import Calender from "./Calender/Calender";
 import Media from "./Media/Media";
@@ -14,7 +14,7 @@ import TreatmentReport from "./Sub Nav/TreatmentReport";
 function Router() {
     return (
         <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/ecotown-health" element={<Dashboard />} />
             <Route exact path="/calender" element={<Calender />} />
             <Route exact path="/media" element={<Media />} />
             <Route exact path="/profile" element={<Profile />} />
