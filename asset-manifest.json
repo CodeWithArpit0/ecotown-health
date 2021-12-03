@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/ecotown-health/static/css/main.b675300f.chunk.css",
-    "main.js": "/ecotown-health/static/js/main.cb0333c2.chunk.js",
-    "main.js.map": "/ecotown-health/static/js/main.cb0333c2.chunk.js.map",
+    "main.css": "/ecotown-health/static/css/main.805226ba.chunk.css",
+    "main.js": "/ecotown-health/static/js/main.19a25328.chunk.js",
+    "main.js.map": "/ecotown-health/static/js/main.19a25328.chunk.js.map",
     "runtime-main.js": "/ecotown-health/static/js/runtime-main.e3c950bf.js",
     "runtime-main.js.map": "/ecotown-health/static/js/runtime-main.e3c950bf.js.map",
     "static/css/2.180dd578.chunk.css": "/ecotown-health/static/css/2.180dd578.chunk.css",
-    "static/js/2.8fe4ce9a.chunk.js": "/ecotown-health/static/js/2.8fe4ce9a.chunk.js",
-    "static/js/2.8fe4ce9a.chunk.js.map": "/ecotown-health/static/js/2.8fe4ce9a.chunk.js.map",
+    "static/js/2.371a6ebc.chunk.js": "/ecotown-health/static/js/2.371a6ebc.chunk.js",
+    "static/js/2.371a6ebc.chunk.js.map": "/ecotown-health/static/js/2.371a6ebc.chunk.js.map",
     "index.html": "/ecotown-health/index.html",
     "static/css/2.180dd578.chunk.css.map": "/ecotown-health/static/css/2.180dd578.chunk.css.map",
-    "static/css/main.b675300f.chunk.css.map": "/ecotown-health/static/css/main.b675300f.chunk.css.map",
-    "static/js/2.8fe4ce9a.chunk.js.LICENSE.txt": "/ecotown-health/static/js/2.8fe4ce9a.chunk.js.LICENSE.txt",
+    "static/css/main.805226ba.chunk.css.map": "/ecotown-health/static/css/main.805226ba.chunk.css.map",
+    "static/js/2.371a6ebc.chunk.js.LICENSE.txt": "/ecotown-health/static/js/2.371a6ebc.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/ecotown-health/static/media/Nunito-Regular.e4eb7682.ttf",
     "static/media/logo.777f5526.png": "/ecotown-health/static/media/logo.777f5526.png"
   },
   "entrypoints": [
     "static/js/runtime-main.e3c950bf.js",
     "static/css/2.180dd578.chunk.css",
-    "static/js/2.8fe4ce9a.chunk.js",
-    "static/css/main.b675300f.chunk.css",
-    "static/js/main.cb0333c2.chunk.js"
+    "static/js/2.371a6ebc.chunk.js",
+    "static/css/main.805226ba.chunk.css",
+    "static/js/main.19a25328.chunk.js"
   ]
 }
