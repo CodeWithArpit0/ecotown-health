@@ -27,7 +27,7 @@ function Header() {
 
                 <div className="navbar_options hide" id="main_menu">
                     <ul>
-                        <HeaderOption navIcon={<BiHomeSmile className="nav_icon" />} title="Dashboard" path="/" activeClass="active_opiton" />
+                        <HeaderOption navIcon={<BiHomeSmile className="nav_icon" />} title="Dashboard" path="/ecotown-health" activeClass="active_opiton" />
                         <HeaderOption navIcon={<AiOutlineCalendar className="nav_icon" />} title="Calender" path="/calender" />
                         <HeaderOption navIcon={<BsFillCameraVideoFill className="nav_icon" />} title="Media" path="/media" />
                         <HeaderOption navIcon={<AiOutlineUser className="nav_icon" />} title="Profile" path="/profile" />
