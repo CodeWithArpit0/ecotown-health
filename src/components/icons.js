@@ -3,7 +3,7 @@ import { AiOutlineCalendar, AiOutlinePlus, AiOutlineAppstoreAdd, AiOutlineCodeSa
 import { GiMedicines } from 'react-icons/gi';
 import { FiUsers, FiMenu } from 'react-icons/fi';
 import { ImLab, ImCross } from 'react-icons/im';
-import { BiPlusMedical, BiNotepad, BiHomeSmile } from 'react-icons/bi';
+import { BiPlusMedical, BiMenu, BiNotepad, BiHomeSmile } from 'react-icons/bi';
 import { GiReceiveMoney, GiTakeMyMoney, GiPayMoney } from 'react-icons/gi';
 import { BsClipboardPlus, BsCheck2All, BsFileEarmarkMedical, BsFillCameraVideoFill, BsPerson } from 'react-icons/bs';
 import { GrResources, GrMoney } from 'react-icons/gr';
@@ -21,6 +21,6 @@ export {
     MdOutlineLocalPharmacy, BsFileEarmarkMedical,ImCross,
     AiOutlineCodeSandbox, MdHistory, FaUserShield,FiMenu,
     MdOutlineHolidayVillage, BsCheck2All, AiOutlineAppstoreAdd,
-    MdOutlineUpcoming, FaHandHoldingMedical, FaUserNurse,
+    MdOutlineUpcoming, FaHandHoldingMedical, FaUserNurse,BiMenu,
     RiUser6Fill, GiTakeMyMoney, VscServerProcess, GiPayMoney
 }

@@ -89,3 +89,19 @@
         padding: 1em 2em;
     }
 }
+
+@media only screen and (max-width: 600px) {
+   .header{
+       .user_panel{
+           .cards_container{
+               .card_group{
+                   flex-direction: column;
+                   margin: 0;
+               }
+               .card{
+                   margin: 1em 0;
+               }
+           }
+       }
+   }
+}

@@ -79,3 +79,29 @@
     }
 
 }
+
+@media only screen and (max-width: 600px) {
+    .campaigns_section {
+
+        .campaign_component{
+
+            .campaign_heading{
+                h1{
+                    font-size: 1.6rem;
+                }
+            }
+
+            .add_campaign{
+                .add_campaign_btn{
+                    .add_btn_icon{
+                        font-size: 3.5rem;
+                    }
+
+                    button{
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
+    }
+}

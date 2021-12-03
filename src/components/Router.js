@@ -14,7 +14,7 @@ import TreatmentReport from "./Sub Nav/TreatmentReport";
 function Router() {
     return (
         <Routes>
-            <Route exact path="/ecotown-health" element={<Dashboard />} />
+            <Route exact path="/" element={<Dashboard />} />
             <Route exact path="/calender" element={<Calender />} />
             <Route exact path="/media" element={<Media />} />
             <Route exact path="/profile" element={<Profile />} />

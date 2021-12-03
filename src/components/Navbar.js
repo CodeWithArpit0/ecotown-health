@@ -1,19 +1,33 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/images/logo.png";
-import { BiHomeSmile, BsCheck2All, RiStockLine, AiOutlinePlus, GiPayMoney, MdPayment, MdOutlinePayments, VscServerProcess, GiTakeMyMoney, RiUser6Fill, FaUserNurse, FaHandHoldingMedical, MdOutlineUpcoming, BsFileEarmarkMedical, MdOutlineHolidayVillage, FaUserShield, GiReceiveMoney, MdHistory, ImLab, GiMedicines, MdOutlineLocalPharmacy, AiOutlineSchedule, AiOutlineCodeSandbox, FaUsers, FiUsers, AiOutlineCalendar, BsFillCameraVideoFill, AiOutlineUser, AiOutlinePhone, BsPerson, BiNotepad } from "./icons";
+import { BiHomeSmile, BiMenu, BsCheck2All, RiStockLine, AiOutlinePlus, GiPayMoney, MdPayment, MdOutlinePayments, VscServerProcess, GiTakeMyMoney, RiUser6Fill, FaUserNurse, FaHandHoldingMedical, MdOutlineUpcoming, BsFileEarmarkMedical, MdOutlineHolidayVillage, FaUserShield, GiReceiveMoney, MdHistory, ImLab, GiMedicines, MdOutlineLocalPharmacy, AiOutlineSchedule, AiOutlineCodeSandbox, FaUsers, FiUsers, AiOutlineCalendar, BsFillCameraVideoFill, AiOutlineUser, AiOutlinePhone, BsPerson, BiNotepad } from "./icons";
 
 function Header() {
+    function toggleMenus(ID) {
+        let menu = document.getElementById(ID);
+        let menuClass = menu.classList[1];
+        if (menuClass === "show") {
+            menu.classList.remove("show");
+            menu.classList.add("hide");
+        }
+        else if (menuClass === "hide") {
+            menu.classList.remove("hide");
+            menu.classList.add("show");
+        }
+    }
     return (
         <section className="navbar">
+
+            {/* ****** Main Menu ****** */}
             <div className="main_nav">
                 <div className="logo">
                     <img src={logo} alt="logo" />
                     <h2>eco<span>town</span> health</h2>
                 </div>
 
-                <div className="navbar-options">
+                <div className="navbar_options hide" id="main_menu">
                     <ul>
-                        <HeaderOption navIcon={<BiHomeSmile className="nav_icon" />} title="Dashboard" path="/ecotown-health" activeClass="active_opiton" />
+                        <HeaderOption navIcon={<BiHomeSmile className="nav_icon" />} title="Dashboard" path="/" activeClass="active_opiton" />
                         <HeaderOption navIcon={<AiOutlineCalendar className="nav_icon" />} title="Calender" path="/calender" />
                         <HeaderOption navIcon={<BsFillCameraVideoFill className="nav_icon" />} title="Media" path="/media" />
                         <HeaderOption navIcon={<AiOutlineUser className="nav_icon" />} title="Profile" path="/profile" />
@@ -21,11 +35,14 @@ function Header() {
                         <HeaderOption navIcon={<AiOutlinePhone className="nav_icon" />} title="Contact Us" path="/contact" />
                     </ul>
                 </div>
+                <button className="toggle_menu_btn" title="Show Menu" onClick={()=>toggleMenus("main_menu")}><BiMenu /></button>
             </div>
 
+            {/* ****** Sub Menu ****** */}
             <div className="sub_nav_container">
                 <div className="sub_nav">
-                    <ul className="nav_list">
+                    <button className="sub_menu_btn" onClick={()=>toggleMenus("sub_menu")}>Menu</button>
+                    <ul className="nav_list hide" id="sub_menu">
                         <li className="nav_option">
                             <BsPerson className="label_icon" />
                             <label className="nav_label">Doctor</label>
