@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/ecotown-health/static/css/main.b675300f.chunk.css",
-    "main.js": "/ecotown-health/static/js/main.eeccd787.chunk.js",
-    "main.js.map": "/ecotown-health/static/js/main.eeccd787.chunk.js.map",
+    "main.js": "/ecotown-health/static/js/main.cb0333c2.chunk.js",
+    "main.js.map": "/ecotown-health/static/js/main.cb0333c2.chunk.js.map",
     "runtime-main.js": "/ecotown-health/static/js/runtime-main.e3c950bf.js",
     "runtime-main.js.map": "/ecotown-health/static/js/runtime-main.e3c950bf.js.map",
     "static/css/2.180dd578.chunk.css": "/ecotown-health/static/css/2.180dd578.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.180dd578.chunk.css",
     "static/js/2.8fe4ce9a.chunk.js",
     "static/css/main.b675300f.chunk.css",
-    "static/js/main.eeccd787.chunk.js"
+    "static/js/main.cb0333c2.chunk.js"
   ]
 }
