@@ -9,11 +9,10 @@
         top: 0;
         left: 0;
         @include flex(center, center);
-        background-color: rgba(0,0,0,0.20);
+        background-color: rgba(0, 0, 0, 0.20);
         display: none;
         animation: growDown .5s ease-in-out;
         transform-origin: top center;
-
 
         .add_doctor_container {
             width: 60%;
@@ -54,12 +53,13 @@
                     flex-direction: column;
                     width: 100%;
 
-                    .row{
+                    .row {
                         width: 100%;
                         @include flex(space-between, center);
                         margin: 1em 0;
                         padding: 0 2em;
-                        input{
+
+                        input {
                             border: 2px solid var(--primary-color);
                             border-radius: 4px;
                             padding: 4px 0;
@@ -68,17 +68,17 @@
                             font-weight: bold;
                             color: var(--secondry-color);
 
-                            &::placeholder{
+                            &::placeholder {
                                 color: var(--primary-color);
                             }
 
-                            &::active{
+                            &::active {
                                 box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
                             }
                         }
 
-                        button{
-                            padding: 6px 2em;
+                        button {
+                            padding: 5px 2em;
                             font-size: .9em;
                             color: #fff;
                             background-color: var(--primary-color);
@@ -87,10 +87,10 @@
                         }
                     }
 
-                    .last_row{
+                    .last_row {
                         justify-content: flex-end;
 
-                        label{
+                        label {
                             margin-right: 2em;
                             padding: 6px 2em;
                             color: #fff;
@@ -116,12 +116,14 @@
             @include flex(space-between, center);
             width: 100%;
             margin: 1em 0 1.5em;
+
             h1 {
                 color: var(--secondry-color);
                 border-bottom: 2px solid var(--primary-color);
                 padding-right: 1em;
                 font-size: 1.8rem;
             }
+
             .add_doctor_btn {
                 padding: 7px 1.5em;
                 border-radius: 4px;
@@ -197,9 +199,6 @@
                             background-color: #fff;
                             color: var(--primary-color);
                         }
-
-
-
                     }
 
                     #doctor_options {
@@ -233,10 +232,93 @@
                         display: block;
                     }
                 }
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: 600px) {
+    .doctors_section {
 
+        .doctor_model {
+
+            .add_doctor_container {
+                width: 90%;
+
+                .form_header {
+                    padding: 0 .5em;
+
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .form_container>form {
+
+                    .row {
+                        flex-direction: column;
+                        margin: .2em 0;
+                        padding: 0;
+
+                        input {
+                            margin: 8px 0;
+                        }
+                    }
+
+                    .last_row {
+                        @include flex(space-around, center);
+                        flex-direction: row;
+
+                        label {
+                            margin-right: 0;
+                            padding: 5px 1.5em;
+                            font-size: .9rem;
+                        }
+                    }
+                }
             }
         }
 
+
+        .doctors_list_container {
+            padding: .5em;
+
+            .section_header {
+                h1 {
+                    font-size: 1.3em;
+                }
+
+                .add_doctor_btn {
+                    padding: 4px 1em;
+                    font-size: .7rem;
+                }
+            }
+
+            .doctors_list {
+                table {
+                    thead>tr>th {
+                        font-size: .6rem;
+                    }
+
+                    tbody>tr>td {
+                        font-size: .6rem;
+
+                        button {
+                            margin: 2px 0;
+                            width: 100%;
+                        }
+                    }
+
+                    .doctor_options_cell>.doctor_options>.btn_row {
+                        flex-direction: column;
+                        justify-content: center;
+
+                        button {
+                            font-size: .6rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

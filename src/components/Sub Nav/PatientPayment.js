@@ -85,6 +85,8 @@ export default function PatientPayment() {
                         <tbody>
                             <PatientPaymentRow />
                             <PatientPaymentRow />
+                            <PatientPaymentRow />
+                            <PatientPaymentRow />
                         </tbody>
                     </table>
                 </div>
@@ -98,10 +100,10 @@ function PatientPaymentRow() {
         <tr>
             <td>1</td>
             <td>Mr. Arpit Saxena</td>
-            <td>+917017339221</td>
+            <td>7017339221</td>
             <td>0</td>
             <td>
-                <button className="patient_register_btn">Payment History</button>
+                <button className="patient_history_btn">Payment History</button>
             </td>
         </tr>
     );

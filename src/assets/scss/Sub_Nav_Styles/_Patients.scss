@@ -99,7 +99,6 @@
                             background-color: var(--primary-color);
                             border-radius: 2px;
                             font-weight: bold;
-
                         }
                     }
                 }
@@ -110,7 +109,7 @@
     }
 
     .patients_list_container {
-        margin-top: 3em;
+        margin: 3em 0;
         min-width: 90%;
         height: auto;
         border-radius: 20px;
@@ -123,6 +122,13 @@
             @include flex(space-between, center);
             width: 100%;
             margin: 1em 0 1.5em;
+
+            h1 {
+                color: var(--secondry-color);
+                border-bottom: 2px solid var(--primary-color);
+                padding-right: 1em;
+                font-size: 1.8rem;
+            }
 
             .add_patient_btn {
                 padding: 7px 1.5em;
@@ -222,6 +228,104 @@
                             background-color: rgba(16, 192, 16, 0.301);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .patients_section {
+
+        .patient_model {
+
+            .add_patient_container {
+                width: 90%;
+                height: auto;
+
+                .form_header {
+                    padding: 0 1em;
+
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                }
+
+                .form_container {
+                    margin-top: 1em;
+
+                    form {
+                        .row {
+                            flex-direction: column;
+                            padding: 0;
+                            margin: 0;
+
+                            input,
+                            select {
+                                margin: 6px 0;
+                            }
+                        }
+
+                        .last_row {
+                            flex-direction: row;
+                            justify-content: space-around;
+                            margin-top: 1em;
+
+                            label {
+                                margin: 0;
+                                padding: 4px 1em;
+                            }
+
+                            button {
+                                font-size: 1rem;
+                                padding: 4px 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .patients_list_container {
+            padding: 1em;
+
+            .section_header {
+                margin: 1em 0 1.5em;
+
+                h1 {
+                    font-size: 1.1rem;
+                }
+
+                .add_patient_btn {
+                    padding: 4px 1em;
+
+                }
+            }
+
+            .patients_list>table {
+                thead {
+                    th {
+                        font-size: .8rem;
+                    }
+                }
+
+                tbody {
+                    td {
+                        font-size: .8rem;
+
+                        .patient_options {
+                            .btn_row {
+                                button {
+                                    margin: 2px 0;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .patient_options_cell>.patient_options>.btn_row {
+                    flex-direction: column;
                 }
             }
         }

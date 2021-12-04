@@ -83,6 +83,10 @@ export default function Patients() {
                         <tbody>
                             <TableRow />
                             <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
+                            <TableRow />
                         </tbody>
 
                     </table>

@@ -59,7 +59,7 @@ export default function Doctors() {
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>Profile</th>
-                                <th>Other Options</th>
+                                <th>Options</th>
                             </tr>
                         </thead>
 
@@ -79,7 +79,7 @@ function TableRow() {
 
     return (
         <tr>
-            <td>123456</td>
+            <td>1</td>
             <td>ABCD Doctor</td>
             <td>abcd@gamil.com</td>
             <td>1234567890</td>

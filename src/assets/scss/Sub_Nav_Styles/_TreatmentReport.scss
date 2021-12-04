@@ -17,7 +17,8 @@
                 color: var(--secondry-color);
                 border-bottom: 2px solid var(--primary-color);
                 padding-right: 1em;
-                font-size: 1.8rem;            }
+                font-size: 1.8rem;
+            }
         }
 
         .date_filter {
@@ -84,6 +85,36 @@
                     }
                 }
             }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .treatment_section {
+        height: auto;
+        padding: 1em 0;
+
+        .treatment_history {
+            padding: 1em;
+
+            .treatment_heading {
+                h1 {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .date_filter>form>.filter_box {
+                width: auto;
+
+                .filter_fields {
+                    flex-direction: column;
+
+                    h5{
+                        margin: 6px 0;
+                    }
+                }
+            }
+
         }
     }
 }

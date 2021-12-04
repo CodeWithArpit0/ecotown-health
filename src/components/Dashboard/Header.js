@@ -17,7 +17,7 @@ export default function Header() {
                     <div className="card_group">
                         <Card icon={<BsPerson />} heading="doctors" cardTitle="Doctors" description="4 doctors are available" cardClass="card1" path="/doctors"/>
                         <Card icon={<GiMedicines />} heading="medicinie" cardTitle="Medicines" description="Checkout" cardClass="card2" path="/doctors"/>
-                        <Card icon={<FiUsers />} heading="patients" cardTitle="Patients" description="Total Patients : 14" cardClass="card3" path="/doctors"/>
+                        <Card icon={<FiUsers />} heading="patients" cardTitle="Patients" description="Total Patients : 14" cardClass="card3" path="/patients"/>
                         <Card icon={<ImLab />} heading="lab reports" cardTitle="Lab Reports" description="Total Patients : 14" cardClass="card4" path="/doctors"/>
                     </div>
 
